@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="#Home">
+                <img src="/images/pngwing.com.png" alt="Brand Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="mypopup">
+        <div class="popup-content">
+            <button class="close-button" onclick="closePopup()">&times;</button>
+            <h1 id="popup-message">Thank you for your submission</h1>
+        </div>
+    </div>
+    
+    
+
+    <!-- HOME -->
+
+        
+        <section class="hero" id="Home">
+            <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/images/pic4.jpg" class="d-block w-100" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                           
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/pic1.jpg"class="d-block w-100" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/pic2.jpg" class="d-block w-100" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block ">
+                           
+                        </div>
+                    </div>
+                </div>
+        
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </section>
+
+   
+    
+
+    
+
+    <section id="products" class="container mt-5">
+        <div>
+        <h2>Our Products</h2>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/images/pro1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quibusdam eligendi necessitatibus recusandae minus itaque porro totam, accusantium officia reiciendis dolore hic odit autem, voluptatem eaque vel obcaecati. Atque, laborum.</p>
+                        <a href="#" class="btn btn-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/images/product1.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore blanditiis, laudantium autem ex exercitationem voluptatum veniam quasi similique veritatis, fugiat sint, quas vel reiciendis voluptatem! Suscipit labore omnis iure impedit.</p>
+                        <a href="#" class="btn btn-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/images/pro3.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 3</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum exercitationem, necessitatibus et delectus, id libero nisi eveniet ducimus, dolorum aliquid corrupti doloremque atque? Quae atque ex odit accusamus laborum? Aliquam.</p>
+                        <a href="#" class="btn btn-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="contact" class="container mt-5">
+        <div>
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us using the form below.</p>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+    </section>
+    
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent form submission
+
+            var firstname = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var mobile = document.getElementById("message").value;
+
+            if (firstname && lastname && dob && email && mobile) {
+                document.getElementById('overlay').style.display = 'block';
+                document.getElementById('mypopup').style.display = 'block';
+                document.getElementById('popup-message').innerText = "Thank you for your submission, " + firstname + " " + lastname + "!";
+            } else {
+                alert("Please fill out all fields.");
+            }
+
+            return false; // Prevent form submission
+        }
+
+        function handleReset() {
+            document.getElementById("myForm").reset();
+        }
+
+        function closePopup() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('mypopup').style.display = 'none';
+        }
+    </script>
+</body>
+
+    <section id="services" class="container mt-5 ">
+        <div>
+        <h2>Our Services</h2>
+        <p>Discover the services we offer to enhance your shopping experience.</p>
+        <ul>
+            <li>Fast and reliable shipping</li>
+            <li>24/7 customer support</li>
+            <li>Easy returns and exchanges</li>
+            <li>Exclusive member discounts</li>
+        </ul>
+    </div>
+    </section>
+    <section id="about" class="container mt-5">
+        <h2>About Us</h2>
+        <p>Welcome to our shopping website! We are dedicated to providing you with the best online shopping experience. Our mission is to offer a wide range of products at competitive prices while ensuring excellent customer service.</p>
+        <p>Our team is passionate about curating the best products for our customers and continuously improving our services. Thank you for choosing us for your shopping needs!</p>
+    </section>
+
+<br>
+    <footer class="bg-dark text-white py-4">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <p><i class="fas fa-phone"></i> +91 234 567 8900</p>
+                    <p><i class="fas fa-envelope"></i> cxy3px@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
